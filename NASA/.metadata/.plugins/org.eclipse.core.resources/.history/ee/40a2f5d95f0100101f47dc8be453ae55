@@ -1,0 +1,17 @@
+spring.application.name=nasa
+#apod api key
+nasa.api.key=NRN6xVnLAtF5f2ZP3BhTZJZFzLaHXekDZ7qvkpNb
+
+#datasource for nasa-apis
+spring.datasource.url=jdbc:postgressql://localhost:5432/nasa_directory
+spring.datasource.username=postgre
+spring.datasource.password=root
+spring.jpa.hibernate.ddl-auto=update
+
+#changing path name for swagger html documentation
+springdoc.swagger-ui.path = /swaggerdoc.html
+
+logging.level.org.springframework.security.web.session.HttpSessionEventPublisher=DEBUG
+
+#changing port
+server.port=3000
