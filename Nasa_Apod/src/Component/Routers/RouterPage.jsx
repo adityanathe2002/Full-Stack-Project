@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Nasa from "../Nasa";
+import PageNotFound from "../Pages/PageNotFound";
 
 // Lazy-loaded components
 const SignUp = lazy(() => import("../Pages/SignUp"));
@@ -12,7 +13,7 @@ const Apod = lazy(() => import("../Pages/Apod"));
 const About = lazy(() => import("../Pages/About"));
 
 // Loading fallback
-const Loading = () => <div className="text-center text-lg font-bold mt-10">Loading...</div>;
+const Loading = () => <div className="h-[90vh]  text-center text-lg font-bold mt-10">Loading...</div>;
 
 export let nasaRouter = createBrowserRouter([
     {
@@ -62,9 +63,7 @@ export let nasaRouter = createBrowserRouter([
             {
                 path: "apod",
                 element: (
-                    <Suspense fallback={<Loading />}>
-                        <Apod />
-                    </Suspense>
+                    <Apod/>
                 )
             },
             {
@@ -76,5 +75,9 @@ export let nasaRouter = createBrowserRouter([
                 )
             }
         ]
+    },
+    {
+        path:"*",
+        element:<PageNotFound/>
     }
 ]);

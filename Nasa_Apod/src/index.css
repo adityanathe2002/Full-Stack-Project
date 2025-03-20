@@ -42,5 +42,19 @@
   background: #555;
 }
 
+/* Not found  */
+@keyframes orbit-satellite {
+  0% {
+      transform: translateX(0) translateY(0) rotate(0deg);
+  }
+  100% {
+      transform: translateX(0) translateY(0) rotate(360deg);
+  }
+}
 
-
+.animate-orbit {
+  position: absolute;
+  animation: orbit-satellite 20s linear infinite;
+  transform-origin: center;
+  /* Adjust the radius of the orbit by changing the translateX/Y values in the parent div */
+}

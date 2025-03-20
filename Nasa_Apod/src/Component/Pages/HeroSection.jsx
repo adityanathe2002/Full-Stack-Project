@@ -12,7 +12,7 @@ const HeroSection = () => {
     }, []);
     return (
         <div
-            className="relative w-full h-[70vh] lg:h-screen bg-cover bg-center flex  items-end justify-center animate-rotateBg " 
+            className="relative w-full h-[70vh] lg:h-screen bg-cover bg-center flex  items-center justify-center animate-rotateBg " 
             style={{
                  backgroundImage: `url(${hero})`,
                  
@@ -31,7 +31,7 @@ const HeroSection = () => {
             ></div>
 
             {/* Content */}
-            <div data-aos="zoom-up" className="relative z-10 text-center text-white px-6 max-w-3xl lg:mb-50 mb-10 ">
+            <div data-aos="zoom-up" className="relative z-10 text-center text-white px-6 max-w-3xl lg:mb-50 mt-50 ">
                 <h1 className="text-lg md:text-6xl font-bold uppercase" data-aos="fade-up">
                     Explore the Universe with NASA
                 </h1>
@@ -41,18 +41,18 @@ const HeroSection = () => {
 
                 {/* Buttons */}
                 <div className="lg:mt-6 mt-3 flex flex-row md:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="500">
-                    <p
-                        to="/rovers"
-                        className="px-6 py-3 bg-gray-700 text-white font-semibold rounded-md hover:bg-gray-800 transition shadow-lg cursor-pointer"
+                    <Link
+                        to="/marsrover"
+                        className="px-6 py-3 bg-gray-700 text-white font-semibold rounded-md hover:bg-gray-800 transition shadow-lg cursor-pointer hidden sm:block "
                     >
                         Explore Mars Rovers
-                    </p>
-                    <p
+                    </Link>
+                    <Link
                         to="/gallery"
-                        className="px-6 py-3 bg-gray-700 text-white font-semibold rounded-md hover:bg-gray-800 transition shadow-lg cursor-pointer"
+                        className="px-6 py-3 bg-gray-700 text-white font-semibold rounded-md hover:bg-gray-800 transition shadow-lg cursor-pointer  hidden sm:block "
                     >
                         View Gallery
-                    </p>
+                    </Link>
                 </div>
             </div>
         </div>

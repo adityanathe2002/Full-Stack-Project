@@ -4,6 +4,7 @@ import Opportunity from '../../assets/image/Opportunity.jpg';
 import Spirit from '../../assets/image/spirit.webp';
 import Curiosity from '../../assets/image/Curiosity.jpg';
 import { FaTimes } from 'react-icons/fa';
+import video from '../../assets/image/marsVideo.mp4'
 
 const marsRovers = [
     {
@@ -217,20 +218,33 @@ const MarsRover = () => {
     const [selectedRover, setSelectedRover] = useState(null);
     useEffect(() => {
         if (selectedRover) {
-          document.body.classList.add("overflow-hidden");
+            document.body.classList.add("overflow-hidden");
         } else {
-          document.body.classList.remove("overflow-hidden");
+            document.body.classList.remove("overflow-hidden");
         }
-    
+
         return () => {
-          document.body.classList.remove("overflow-hidden");
+            document.body.classList.remove("overflow-hidden");
         };
-      }, [selectedRover]);
-    
+    }, [selectedRover]);
+
 
     return (
-        <div className="min-h-screen bg-gray-900 text-white py-12">
-            <div className="container mx-auto px-6 text-center">
+        <div className="min-h-screen bg-gray-900 text-white py-12 relative">
+
+            {/* <video
+                autoPlay
+                loop
+                muted
+                className="absolute inset-0 w-full h-full object-cover z-0"
+            >
+                <source src="https://videocdn.cdnpk.net/videos/f6f27f68-bd66-5743-8053-4493e8fc53e2/horizontal/previews/clear/small.mp4?token=exp=1742384512~hmac=b49744bc9a1b7eeacf7dcb8089b7cb40223176f661c7ced04c2f72cfa86ca900" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+
+            
+            <div className="absolute inset-1 bg-gradient-to-b from-transparent to-black opacity-95 "></div> */}
+            <div className="relative container mx-auto px-6 text-center">
                 <h1 className="text-4xl font-bold text-[#539ABF] mb-6">Mars Rovers</h1>
                 <p className="text-lg text-gray-400 mb-10">
                     Explore the legendary Mars rovers that have expanded our understanding of the Red Planet.

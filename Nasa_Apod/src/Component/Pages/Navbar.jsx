@@ -27,8 +27,8 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className=" hidden md:flex space-x-8">
           <ul className="flex items-center gap-6 text-white">
-            {navLinks.map((data) => (
-              <li key={data.id}>
+            {navLinks.map((data,i) => (
+              <li key={i}>
                 <NavLink
                   className={({ isActive }) => {
                     let checkIsActive = isActive ? "linkIsActive" : "linkIsInActive";

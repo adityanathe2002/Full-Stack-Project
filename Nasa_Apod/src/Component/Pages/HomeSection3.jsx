@@ -9,7 +9,7 @@ import HomeSection2 from "./HomeSection2";
 
 const HomeSection3 = () => {
 	return (
-		<div className="relative mt-10">
+		<div className="relative ">
 			{/* Background Video - Fixed */}
 			<video
 				src={video1}
@@ -19,7 +19,7 @@ const HomeSection3 = () => {
 				className="fixed top-0 left-0 right-0 w-full h-full object-cover -z-10"
 			/>
 			{/* Black Transparent Overlay */}
-			<div className="fixed top-0 left-0 w-full h-full bg-black opacity-50 -z-10"></div>
+			<div className="absolute  top-0 left-0 w-full h-full bg-black opacity-90 -z-10"></div>
 
 			{/* Scrollable Content */}
 			<div className="relative z-10 text-white">
@@ -37,7 +37,7 @@ const HomeSection3 = () => {
 						<h1 className="text-2xl md:text-3xl font-bold mb-2">
 							Journey Beyond Earth – Discover the Wonders of Space.
 						</h1>
-						<h1 className="text-lg md:text-xl">
+						<h1 className="text-lg md:text-xl text-justify">
 							With fire and thunder, we break free from Earth's grasp, soaring into the unknown.
 							Every launch is a step closer to unraveling the mysteries of the universe
 						</h1>
@@ -47,10 +47,10 @@ const HomeSection3 = () => {
 				{/* planets */}
 				<div className="w-[100%] h-auto md:h-[100vh] mb-20 md:mb-0  flex flex-col-reverse  md:flex-row items-center px-4 ">
 					<div data-aos="fade-up" className="w-[100%] md:w-[60%]">
-						<h1 className="text-2xl md:text-3xl font-bold mb-2">
+						<h1 className="text-2xl md:text-3xl font-bold mb-2 p-2">
 							Endless galaxies, infinite wonders." 🌌✨
 						</h1>
-						<h1 className="text-lg md:text-xl">
+						<h1 className="text-lg md:text-xl text-justify shadow-lg p-2">
 							Drifting through the vast cosmic ocean, planets dance around their stars, while galaxies weave the grand tapestry of the universe.
 							Beyond our world lies an endless expanse of stars, planets, and galaxies—each holding secrets waiting to be uncovered
 						</h1>
@@ -75,11 +75,11 @@ const HomeSection3 = () => {
 							className="w-[100%] h-64 md:w-110 md:h-96 object-cover rounded-xl shadow-lg mb-6 md:mb-0"
 						/>
 					</div>
-					<div data-aos="fade-up" className="w-[100%] md:w-[60%]">
+					<div data-aos="fade-up" className="w-[100%] md:w-[60%] p-4 ">
 						<h1 className="text-2xl md:text-3xl font-bold mb-2">
 							Mars: The Mysterious Red Planet
 						</h1>
-						<h1 className="text-lg md:text-xl">
+						<h1 className="text-lg md:text-xl text-justify">
 							Mars, the fourth planet from the Sun, is often called the Red Planet due to its iron-rich, dusty surface. It has the tallest volcano in the solar system, Olympus Mons, and the deepest canyon, Valles Marineris. Mars has a thin atmosphere primarily composed of carbon dioxide, making it incapable of supporting human life naturally
 						</h1>
 					</div>
@@ -87,11 +87,11 @@ const HomeSection3 = () => {
 
 				{/* Yuri Alekseyevich */}
 				<div className="w-[100%] h-auto md:h-[100vh] mb-20 md:mb-0  flex flex-col-reverse  md:flex-row items-center px-4 ">
-					<div data-aos="fade-up" className="w-[100%] md:w-[60%]">
-						<h1 className="text-2xl md:text-3xl font-bold mb-2">
+					<div data-aos="fade-up" className="w-[100%] md:w-[60%] p-4">
+						<h1 className="text-2xl md:text-3xl font-bold mb-2 ">
 							April 1961 – First Human Entered Space
 						</h1>
-						<h1 className="text-lg md:text-xl">
+						<h1 className="text-lg md:text-xl text-justify">
 							Yuri Alekseyevich Gagarin (9 March 1934 – 27 March 1968) was a Soviet pilot and cosmonaut who, aboard the first successful crewed spaceflight, became the first person to journey into outer space. Travelling on Vostok 1, Gagarin completed one orbit of Earth on 12 April 1961,
 						</h1>
 					</div>
@@ -115,11 +115,11 @@ const HomeSection3 = () => {
 							className="w-[100%] h-64 md:w-110 md:h-96 object-cover rounded-xl shadow-lg mb-6 md:mb-0"
 						/>
 					</div>
-					<div data-aos="fade-up"  className="w-[100%] md:w-[60%]">
+					<div data-aos="fade-up"  className="w-[100%] md:w-[60%] p-4">
 						<h1 className="text-2xl md:text-3xl font-bold mb-2">
 							Neil Armstrong: The First Man on the Moon
 						</h1>
-						<h1 className="text-lg md:text-xl">
+						<h1 className="text-lg md:text-xl text-justify">
 							The first person on the Moon was Neil Armstrong, an American astronaut who set foot on the lunar surface on July 20, 1969, during the Apollo 11 mission. His famous words were:
 							"That's one small step for man, one giant leap for mankind."
 						</h1>
